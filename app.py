@@ -69,5 +69,18 @@ def update_post(id):
     categories = Category.query.all()
     return render_template('update_post.html', post=post, categories=categories)
 
+
+
+#Eliminar post
+@app.route('/posts/delete/<int:id>')
+def delete_post(id):
+    post = Post.query.get(id)
+    if post:
+        db.session.delete(post)
+        db.session.commit()
+    return redirect(url_for('index'))
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
