@@ -10,6 +10,7 @@ load_dotenv()
 #crear instancia
 
 #Hola mundo 
+#NECESITI SABER MAS 
 
 app =  Flask(__name__)
 
