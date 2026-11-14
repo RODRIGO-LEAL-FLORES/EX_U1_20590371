@@ -10,6 +10,7 @@ load_dotenv()
 #crear instancia
 
 #Hola mundo 
+
 app =  Flask(__name__)
 
 # Configuración de la base de datos PostgreSQL
